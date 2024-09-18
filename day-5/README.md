@@ -2,7 +2,7 @@
 
 AWS (Amazon Web Services) provides multiple layers of security to protect resources and data within its cloud infrastructure. Two important components for network security in AWS are Security Groups and Network Access Control Lists (NACLs). Let's explore how each of them works:
 
-    Security Groups:
+- Security Groups:
         Security Groups act as virtual firewalls for Amazon EC2 instances (virtual servers) at the instance level. They control inbound and outbound traffic by allowing or denying specific protocols, ports, and IP addresses.
         Each EC2 instance can be associated with one or more security groups, and each security group consists of inbound and outbound rules.
         Inbound rules determine the traffic that is allowed to reach the EC2 instance, whereas outbound rules control the traffic leaving the instance.
@@ -11,7 +11,7 @@ AWS (Amazon Web Services) provides multiple layers of security to protect resour
         Security Groups are stateful, meaning that if an inbound rule allows traffic, the corresponding outbound traffic is automatically allowed, and vice versa.
         Changes made to security group rules take effect immediately.
 
-    Network Access Control Lists (NACLs):
+- Network Access Control Lists (NACLs):
         NACLs are an additional layer of security that operates at the subnet level. They act as stateless traffic filters for inbound and outbound traffic at the subnet boundary.
         Unlike Security Groups, NACLs are associated with subnets, and each subnet can have only one NACL. However, multiple subnets can share the same NACL.
         NACLs consist of a numbered list of rules (numbered in ascending order) that are evaluated in order from lowest to highest.
